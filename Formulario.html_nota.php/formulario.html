@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Registro al Congreso i6</title>
+</head>
+<body>
+<center>
+    <h2>Formulario de Registro al Congreso i6</h2>
+    <form action="nota.php" method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required><br><br>
+        
+        <label>Institucion:</label>
+        <input type="text" name="institucion" required><br><br>
+        
+        <label>Edad:</label>
+        <input type="number" name="edad" required><br><br>
+        
+        <label>Genero:</label><br>
+        <input type="radio" name="genero" value="masculino"> Masculino
+        <input type="radio" name="genero" value="femenino"> Femenino
+        <br><br>
+        
+        <h3>Area de interes:</h3><br>
+        <input type="checkbox" name="interes[]" value="ia"> Inteligencia Artificial<br>
+        <input type="checkbox" name="interes[]" value="redes"> Redes<br>
+        <input type="checkbox" name="interes[]" value="informatica"> Informatica<br><br>
+        
+        <label>Fecha de asistencia:</label>
+        <input type="date" name="fecha_asistencia" required><br><br>
+        
+        <label>Correo electronico:</label>
+        <input type="email" name="correo" required><br><br>
+        
+        <h3>Cuantos dias vas a asistir?</h3>
+        <select name="dias_asistencia">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br><br>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+    </form>
+</center>
+</body>
+</html>
+
